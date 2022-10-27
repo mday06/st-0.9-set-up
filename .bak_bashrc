@@ -1,0 +1,11 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+export PS1="\[\033[38;5;9m\][\[$(tput sgr0)\]\[\033[38;5;178m\]\u\[$(tput sgr0)\]\[\033[38;5;112m\]@\[$(tput sgr0)\]\[\033[38;5;79m\]\h\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;211m\]\w\[$(tput sgr0)\]\[\033[38;5;9m\]]\[$(tput sgr0)\]\\$ \[$(tput sgr0)\]"
+
+alias ls='ls --color=auto'
+export LS_COLORS='fi=01;37:di=38;5;211:ln=36:so=32:pi=175;255;0:ex=215;175;0:bd=0:su=0:sg=0:tw=0:ow=0'
